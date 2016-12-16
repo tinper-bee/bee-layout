@@ -58,19 +58,18 @@ var Con = function (_React$Component) {
   Con.prototype.render = function render() {
     var _tbclass;
 
-    var _props = this.props;
-    var fluid = _props.fluid;
-    var Component = _props.componentClass;
-    var classes = _props.classes;
-
-    var others = _objectWithoutProperties(_props, ['fluid', 'componentClass', 'classes']);
+    var _props = this.props,
+        fluid = _props.fluid,
+        Component = _props.componentClass,
+        className = _props.className,
+        others = _objectWithoutProperties(_props, ['fluid', 'componentClass', 'className']);
 
     var tbclass = (_tbclass = {}, _defineProperty(_tbclass, '' + clsPrefix, !fluid), _defineProperty(_tbclass, clsPrefix + '-fluid', fluid), _tbclass);
 
     return _react2["default"].createElement(
       Component,
       _extends({}, others, {
-        className: (0, _classnames2["default"])(tbclass, classes)
+        className: (0, _classnames2["default"])(tbclass, className)
       }),
       this.props.children
     );

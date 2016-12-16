@@ -46,18 +46,17 @@ var Row = function (_Component) {
   }
 
   Row.prototype.render = function render() {
-    var _props = this.props;
-    var Component = _props.componentClass;
-    var classes = _props.classes;
-
-    var others = _objectWithoutProperties(_props, ['componentClass', 'classes']);
+    var _props = this.props,
+        Component = _props.componentClass,
+        className = _props.className,
+        others = _objectWithoutProperties(_props, ['componentClass', 'className']);
 
     var bsclass = '' + clsPrefix;
 
     return _react2["default"].createElement(
       Component,
       _extends({}, others, {
-        className: (0, _classnames2["default"])(bsclass, classes)
+        className: (0, _classnames2["default"])(bsclass, className)
       }),
       this.props.children
     );

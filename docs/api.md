@@ -1,54 +1,13 @@
-# bee-layout
+## Layout 栅格布局
 
-[![npm version](https://img.shields.io/npm/v/bee-layout.svg)](https://www.npmjs.com/package/bee-layout)
-[![Build Status](https://img.shields.io/travis/tinper-bee/bee-layout/master.svg)](https://travis-ci.org/tinper-bee/bee-layout)
-[![Coverage Status](https://coveralls.io/repos/github/tinper-bee/bee-layout/badge.svg?branch=master)](https://coveralls.io/github/tinper-bee/bee-layout?branch=master)
+默认分成十二栅格，通过Con组件设置容器大小，Row组件设置行容器，Col组件控制栅格的位置和大小。
 
 
-react bee-layout component for tinper-bee
+## 代码演示
 
-栅格布局组件，包含container,row和col
+### API
 
-## 使用方法
-
-#### 下载npm包
-
-```
-npm install --save bee-layout
-```
-
-```js
-import { Con, Row, Col } from 'bee-layout';
-
-ReactDOM.render(
-    <Con>
-        <Row>
-            <Col md={6} >
-            </Col>
-        </Row>
-    </Con>,
-    document.body);
-
-```
-
-#### 样式引入
-
-- 可以使用link引入build目录下Layout.css
-```
-<link rel="stylesheet" href="./node_modules/build/Layout.css">
-```
-- 可以在js中import样式
-```js
-import "./node_modules/src/Layout.scss"
-//或是
-import "./node_modules/build/Layout.css"
-```
-
-
-
-## API
-
-### Con组件
+## Con组件
 
 |参数|说明|类型|默认值|
 |:--|:---:|:--:|---:|
@@ -84,13 +43,3 @@ import "./node_modules/build/Layout.css"
 |componentClass|组件根元素|element/ReactElement|div|
 
 以上列数设置，只能设置1-12的数字。
-
-#### 开发调试
-
-```sh
-$ npm install -g bee-tools
-$ git clone https://github.com/tinper-bee/bee-layout
-$ cd bee-layout
-$ npm install
-$ npm run dev
-```

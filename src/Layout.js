@@ -25,7 +25,7 @@ const clsPrefix = 'u-container';
 
 class Con extends React.Component {
   render() {
-    const { fluid, componentClass: Component, classes, ...others } =
+    const { fluid, componentClass: Component, className, ...others } =
       this.props;
 
     const tbclass = {
@@ -36,7 +36,7 @@ class Con extends React.Component {
     return (
       <Component
         {...others}
-        className={classNames(tbclass, classes)}
+        className={classNames(tbclass, className)}
       >
       { this.props.children }
       </Component>

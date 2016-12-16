@@ -113,11 +113,10 @@ var Col = function (_Component) {
   }
 
   Col.prototype.render = function render() {
-    var _props = this.props;
-    var Component = _props.componentClass;
-    var classes = _props.classes;
-
-    var others = _objectWithoutProperties(_props, ['componentClass', 'classes']);
+    var _props = this.props,
+        Component = _props.componentClass,
+        className = _props.className,
+        others = _objectWithoutProperties(_props, ['componentClass', 'className']);
 
     var tbClass = [];
     /**
@@ -145,7 +144,7 @@ var Col = function (_Component) {
     return _react2["default"].createElement(
       Component,
       _extends({
-        className: (0, _classnames2["default"])(tbClass, classes)
+        className: (0, _classnames2["default"])(tbClass, className)
       }, others),
       this.props.children
     );

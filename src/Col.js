@@ -83,7 +83,7 @@ const DEVICE_SIZES = ['lg', 'md', 'sm', 'xs'];
 
 class Col extends Component {
   render() {
-    const { componentClass: Component, classes, ...others } = this.props;
+    const { componentClass: Component, className, ...others } = this.props;
 
     const tbClass = [];
 /**
@@ -111,7 +111,7 @@ class Col extends Component {
 
     return (
       <Component
-        className={classNames(tbClass, classes)}
+        className={classNames(tbClass, className)}
       { ...others }>
       { this.props.children }
       </Component>

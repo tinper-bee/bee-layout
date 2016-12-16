@@ -17,14 +17,14 @@ const clsPrefix = 'u-row';
 
 class Row extends Component {
   render() {
-    const { componentClass: Component, classes, ...others } = this.props;
+    const { componentClass: Component, className, ...others } = this.props;
 
     const bsclass = `${clsPrefix}`;
 
     return (
       <Component
         {...others}
-        className={classNames(bsclass, classes)}
+        className={classNames(bsclass, className)}
       >
       { this.props.children }
       </Component>
