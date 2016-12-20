@@ -13,7 +13,7 @@ class Demo3 extends Component {
             <Col md={8} mdPush={4} xs={8} xsPush={4} sm={8} smPush={4} >
             <div className='grayDeep'></div>
             </Col>
-            <Col md={4} mdPull={8} xs={4} xsPush={8} sm={4} smPush={8}  >
+            <Col md={4} mdPull={8} xs={4} xsPull={8} sm={4} smPull={8}  >
             <div className='gray'></div>
             </Col>
             </Row>
