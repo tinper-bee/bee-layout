@@ -9,6 +9,9 @@
     width: 100%;
     margin-bottom: 10px;
     border-radius: 5px;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
 }
 .gray {
     background: unquote("rgb(#{$palette-grey-400})");
@@ -16,6 +19,9 @@
     width: 100%;
     margin-bottom: 10px;
     border-radius: 5px;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
 }
 .grayLight{
     background: unquote("rgb(#{$palette-grey-200})");
@@ -23,4 +29,7 @@
     width: 100%;
     margin-bottom: 10px;
     border-radius: 5px;
+    color: unquote("rgb(#{$palette-grey-800})");
+    text-align: center;
+    line-height: 30px;
 }
