@@ -19,13 +19,13 @@ const propTypes = {
 const defaultProps = {
   componentClass: 'div',
   fluid: false,
+  clsPrefix: 'u-container'
 };
 
-const clsPrefix = 'u-container';
 
 class Con extends React.Component {
   render() {
-    const { fluid, componentClass: Component, className, ...others } =
+    const { fluid, componentClass: Component, clsPrefix, className, ...others } =
       this.props;
 
     const tbclass = {

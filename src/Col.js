@@ -75,15 +75,15 @@ const propTypes = {
 
 const defaultProps = {
   componentClass: 'div',
+  clsPrefix: 'u-col'
 };
 
-const clsPrefix = 'u-col';
 
 const DEVICE_SIZES = ['lg', 'md', 'sm', 'xs'];
 
 class Col extends Component {
   render() {
-    const { componentClass: Component, className, ...others } = this.props;
+    const { componentClass: Component, className, clsPrefix, ...others } = this.props;
 
     const tbClass = [];
 /**

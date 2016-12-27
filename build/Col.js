@@ -96,10 +96,9 @@ var propTypes = {
 };
 
 var defaultProps = {
-  componentClass: 'div'
+  componentClass: 'div',
+  clsPrefix: 'u-col'
 };
-
-var clsPrefix = 'u-col';
 
 var DEVICE_SIZES = ['lg', 'md', 'sm', 'xs'];
 
@@ -116,7 +115,8 @@ var Col = function (_Component) {
     var _props = this.props,
         Component = _props.componentClass,
         className = _props.className,
-        others = _objectWithoutProperties(_props, ['componentClass', 'className']);
+        clsPrefix = _props.clsPrefix,
+        others = _objectWithoutProperties(_props, ['componentClass', 'className', 'clsPrefix']);
 
     var tbClass = [];
     /**

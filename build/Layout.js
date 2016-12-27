@@ -41,10 +41,9 @@ var propTypes = {
 
 var defaultProps = {
   componentClass: 'div',
-  fluid: false
+  fluid: false,
+  clsPrefix: 'u-container'
 };
-
-var clsPrefix = 'u-container';
 
 var Con = function (_React$Component) {
   _inherits(Con, _React$Component);
@@ -61,8 +60,9 @@ var Con = function (_React$Component) {
     var _props = this.props,
         fluid = _props.fluid,
         Component = _props.componentClass,
+        clsPrefix = _props.clsPrefix,
         className = _props.className,
-        others = _objectWithoutProperties(_props, ['fluid', 'componentClass', 'className']);
+        others = _objectWithoutProperties(_props, ['fluid', 'componentClass', 'clsPrefix', 'className']);
 
     var tbclass = (_tbclass = {}, _defineProperty(_tbclass, '' + clsPrefix, !fluid), _defineProperty(_tbclass, clsPrefix + '-fluid', fluid), _tbclass);
 

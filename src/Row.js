@@ -11,13 +11,13 @@ const propTypes = {
 
 const defaultProps = {
   componentClass: 'div',
+  clsPrefix: 'u-row'
 };
 
-const clsPrefix = 'u-row';
 
 class Row extends Component {
   render() {
-    const { componentClass: Component, className, ...others } = this.props;
+    const { componentClass: Component, clsPrefix, className, ...others } = this.props;
 
     const bsclass = `${clsPrefix}`;
 

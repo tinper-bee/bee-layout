@@ -31,10 +31,9 @@ var propTypes = {
 };
 
 var defaultProps = {
-  componentClass: 'div'
+  componentClass: 'div',
+  clsPrefix: 'u-row'
 };
-
-var clsPrefix = 'u-row';
 
 var Row = function (_Component) {
   _inherits(Row, _Component);
@@ -48,8 +47,9 @@ var Row = function (_Component) {
   Row.prototype.render = function render() {
     var _props = this.props,
         Component = _props.componentClass,
+        clsPrefix = _props.clsPrefix,
         className = _props.className,
-        others = _objectWithoutProperties(_props, ['componentClass', 'className']);
+        others = _objectWithoutProperties(_props, ['componentClass', 'clsPrefix', 'className']);
 
     var bsclass = '' + clsPrefix;
 
