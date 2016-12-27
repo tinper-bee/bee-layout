@@ -35,6 +35,12 @@
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px; }
+  .u-container :before,
+  .u-container :after {
+    content: " ";
+    display: table; }
+  .u-container :after {
+    clear: both; }
   @media (min-width: 768px) {
     .u-container {
       width: 750px; } }
@@ -50,11 +56,23 @@
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px; }
+  .u-container-fluid :before,
+  .u-container-fluid :after {
+    content: " ";
+    display: table; }
+  .u-container-fluid :after {
+    clear: both; }
 
 .u-row {
   margin-left: -15px;
   margin-right: -15px;
   box-sizing: border-box; }
+  .u-row :before,
+  .u-row :after {
+    content: " ";
+    display: table; }
+  .u-row :after {
+    clear: both; }
   .u-row:before {
     display: table;
     content: " "; }
