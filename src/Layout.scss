@@ -1,14 +1,14 @@
 @import "../node_modules/tinper-bee-core/scss/minxin-variables";
 
 @mixin clearfix {
-  :before,
-  :after {
-   content: " "; // 1
-   display: table; // 2
-  }
-  :after {
-   clear: both;
-  }
+  // :before,
+  // :after {
+  //  content: " "; // 1
+  //  display: table; // 2
+  // }
+  // :after {
+  //  clear: both;
+  // }
 }
 
 // Centered container element
