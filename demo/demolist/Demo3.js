@@ -5,8 +5,10 @@
  *
  */
 
-class Demo3 extends Component {
+import React, { Component } from 'react';
+import { Con, Row, Col } from '../../src';
 
+class Demo3 extends Component {
     render () {
         return (
             <Row>
@@ -20,3 +22,5 @@ class Demo3 extends Component {
         )
     }
 }
+
+export default Demo3;

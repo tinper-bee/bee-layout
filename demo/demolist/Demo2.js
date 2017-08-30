@@ -5,6 +5,9 @@
  *
  */
 
+import React, { Component } from 'react';
+import { Con, Row, Col } from '../../src';
+
 class Demo2 extends Component {
     render () {
         return (
@@ -19,3 +22,5 @@ class Demo2 extends Component {
         )
     }
 }
+
+export default Demo2;
