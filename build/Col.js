@@ -14,6 +14,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
@@ -27,72 +31,72 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
 
 var propTypes = {
-  componentClass: _react.PropTypes.oneOfType([_react2["default"].PropTypes.element, _react2["default"].PropTypes.string]),
+  componentClass: _propTypes2["default"].oneOfType([_propTypes2["default"].element, _propTypes2["default"].string]),
 
   /**
    * xs显示列数
    */
-  xs: _react.PropTypes.number,
+  xs: _propTypes2["default"].number,
   /**
    * sm显示列数
    */
-  sm: _react.PropTypes.number,
+  sm: _propTypes2["default"].number,
   /**
    * md显示列数
    */
-  md: _react.PropTypes.number,
+  md: _propTypes2["default"].number,
   /**
    * lg显示列数
    */
-  lg: _react.PropTypes.number,
+  lg: _propTypes2["default"].number,
   /**
    * xs偏移列数
    */
-  xsOffset: _react.PropTypes.number,
+  xsOffset: _propTypes2["default"].number,
   /**
    * sm偏移列数
    */
-  smOffset: _react.PropTypes.number,
+  smOffset: _propTypes2["default"].number,
   /**
    * md偏移列数
    */
-  mdOffset: _react.PropTypes.number,
+  mdOffset: _propTypes2["default"].number,
   /**
    * lg偏移列数
    */
-  lgOffset: _react.PropTypes.number,
+  lgOffset: _propTypes2["default"].number,
   /**
    * xs右偏移列数
    */
-  xsPush: _react.PropTypes.number,
+  xsPush: _propTypes2["default"].number,
   /**
    * sm右偏移列数
    */
-  smPush: _react.PropTypes.number,
+  smPush: _propTypes2["default"].number,
   /**
    * md右偏移列数
    */
-  mdPush: _react.PropTypes.number,
+  mdPush: _propTypes2["default"].number,
   /**
    * lg右偏移列数
    */
-  lgPush: _react.PropTypes.number,
+  lgPush: _propTypes2["default"].number,
   /**
    * xs左偏移列数
    */
-  xsPull: _react.PropTypes.number,
+  xsPull: _propTypes2["default"].number,
   /**
    * sm左偏移列数
    */
-  smPull: _react.PropTypes.number,
+  smPull: _propTypes2["default"].number,
   /**
    * md左偏移列数
    */
-  mdPull: _react.PropTypes.number,
+  mdPull: _propTypes2["default"].number,
   /**
    * lg左偏移列数
    */
-  lgPull: _react.PropTypes.number
+  lgPull: _propTypes2["default"].number
 };
 
 var defaultProps = {
@@ -153,8 +157,8 @@ var Col = function (_Component) {
   return Col;
 }(_react.Component);
 
-Col.propTypes = propTypes;
 Col.defaultProps = defaultProps;
+Col.propTypes = propTypes;
 
 exports["default"] = Col;
 module.exports = exports['default'];

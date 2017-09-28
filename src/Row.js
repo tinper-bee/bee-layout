@@ -1,11 +1,11 @@
 import classNames from 'classnames';
-import React, { PropTypes, Component } from 'react';
-
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 const propTypes = {
   componentClass: PropTypes.oneOfType([
-      React.PropTypes.element,
-      React.PropTypes.string
+      PropTypes.element,
+      PropTypes.string
   ])
 };
 

@@ -1,6 +1,6 @@
 import classNames from 'classnames';
-import React, { PropTypes, Component } from 'react';
-
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 const propTypes = {
   /**
@@ -10,9 +10,9 @@ const propTypes = {
   /**
    * You can use a custom element for this component
    */
-  componentClass: PropTypes.oneOfType([
-      React.PropTypes.element,
-      React.PropTypes.string
+  componentClass: PropTypes.oneOf([
+      PropTypes.element,
+      PropTypes.string
   ])
 };
 
