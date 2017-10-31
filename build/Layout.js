@@ -40,7 +40,7 @@ var propTypes = {
   /**
    * You can use a custom element for this component
    */
-  componentClass: _propTypes2["default"].oneOf([_propTypes2["default"].element, _propTypes2["default"].string])
+  componentClass: _propTypes2["default"].oneOfType([_propTypes2["default"].element, _propTypes2["default"].string])
 };
 
 var defaultProps = {

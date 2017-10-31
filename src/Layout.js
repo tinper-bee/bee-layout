@@ -10,7 +10,7 @@ const propTypes = {
   /**
    * You can use a custom element for this component
    */
-  componentClass: PropTypes.oneOf([
+  componentClass: PropTypes.oneOfType([
       PropTypes.element,
       PropTypes.string
   ])

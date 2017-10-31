@@ -11,6 +11,7 @@ import { Con, Row, Col } from '../../src';
 class Demo1 extends Component {
     render () {
         return (
+        <Con componentClass="div">
             <Row>
                 <Col md={12} xs={12} sm={12} ><div className='grayDeep'>12</div></Col>
                 <Col md={6} xs={6} sm={6} ><div className='gray'>6</div></Col>
@@ -29,6 +30,8 @@ class Demo1 extends Component {
                 <Col md={2}  xs={2} sm={2}><div className='grayLight'>2</div></Col>
                 <Col md={2}  xs={2} sm={2}><div className='grayDeep'>2</div></Col>
             </Row>
+        </Con>
+
         )
     }
 }
