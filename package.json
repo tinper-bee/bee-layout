@@ -42,7 +42,7 @@
  },
  "devDependencies": {
   "bee-button": "latest",
-  "bee-panel": "latest",
+  "bee-panel": "1.2.12",
   "chai": "^3.5.0",
   "console-polyfill": "~0.2.1",
   "enzyme": "^2.4.1",
